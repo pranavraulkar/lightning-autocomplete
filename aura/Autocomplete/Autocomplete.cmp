@@ -2,7 +2,7 @@
 	@author	Pranav Raulkar (pranavraulkar@gmail.com)
 	@description 	The autocomplete Lightning
 -->
-<aura:component implements="force:appHostable,force:hasRecordId,forceCommunity:availableForAllPageTypes,flexipage:availableForRecordHome" controller="AutocompleteController" >
+<aura:component implements="force:appHostable,forceCommunity:availableForAllPageTypes,flexipage:availableForRecordHome" controller="AutocompleteController" >
     <!-- COMPONENT REQUIRES SECTION -->
     <ltng:require styles="{!$Resource.JQueryUI1114 + '/jquery-ui-1.11.4/jquery-ui.min.css'}" 
                   scripts="{!join(',', $Resource.JQuery224, $Resource.JQueryUI1114 + '/jquery-ui-1.11.4/jquery-ui.min.js')}" 

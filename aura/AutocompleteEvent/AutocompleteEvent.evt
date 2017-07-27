@@ -1,0 +1,3 @@
+<aura:event type="COMPONENT" description="Event fired upon selection of an entry in a autocomplete component." >
+	<aura:attribute name="selectedValue" type="String" description="Attribute containing the value part of the selected autocomplete entry." />
+</aura:event>
