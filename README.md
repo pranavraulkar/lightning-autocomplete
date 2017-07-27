@@ -44,8 +44,10 @@ By default the 'Name' field on the object is used as the search field.
 > NOTE: Uses modified JQuery CSS, so do not use your version or the default version.
 
 ## Screenshots
-Fig 1: Setup:
+### Fig 1: Setup:
+
 ![Fig 1: Setup:](https://github.com/pranavraulkar/lightning-autocomplete/blob/master/screenshots/autocomplete_setup.png)
 
-Fig 2: Working:
+### Fig 2: Working:
+
 ![Fig 2: Working:](https://github.com/pranavraulkar/lightning-autocomplete/blob/master/screenshots/autocomplete_working.png)
