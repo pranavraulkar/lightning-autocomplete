@@ -1,0 +1,8 @@
+<aura:documentation>
+	<aura:description>
+        An c:Autocomplete creates a autocomplete/Lookup text input that provides suggestions to user, as he types. You can use the attributes on this component to configure the autocomplete for any object's field. By default the 'Name' field on the object is used.
+    </aura:description>
+	<aura:example name="ExampleName" ref="exampleComponentName" label="Label">
+		Example Description
+	</aura:example>
+</aura:documentation>

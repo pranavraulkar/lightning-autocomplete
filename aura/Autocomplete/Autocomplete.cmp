@@ -1,0 +1,32 @@
+<!--
+	@author	Pranav Raulkar (pranavraulkar@gmail.com)
+	@description 	The autocomplete Lightning
+-->
+<aura:component implements="force:appHostable,force:hasRecordId,forceCommunity:availableForAllPageTypes,flexipage:availableForRecordHome" controller="AutocompleteController" >
+    <!-- COMPONENT REQUIRES SECTION -->
+    <ltng:require styles="{!$Resource.JQueryUI1114 + '/jquery-ui-1.11.4/jquery-ui.min.css'}" 
+                  scripts="{!join(',', $Resource.JQuery224, $Resource.JQueryUI1114 + '/jquery-ui-1.11.4/jquery-ui.min.js')}" 
+                  afterScriptsLoaded="{!c.afterScriptsLoaded}" />
+    
+    <!-- COMPONENT ATTRIBUTE SECTION -->
+    <aura:attribute name="showRequired"	type="Boolean" required="true" default="false"   description="Boolean attibute to show required (red asterisk) indicator before label." />
+    <aura:attribute name="inputLabel" 	type="String"  required="true" default="Search"  description="The label string for the lookup field. By default 'Name' is used." />
+    <aura:attribute name="sObjectName" 	type="String"  required="true" default="Account" description="Object on which autocomplete lookup is to be created." />
+    <aura:attribute name="fieldName"  	type="String"  required="true" default="Name"    description="The field on which user will get autocomplete suggestions while typing." />
+    <aura:attribute name="recordLimit" 	type="Integer" required="true" default="200"     description="The number of records to be fetched. Default 200. Minimum 1. Maximum 2000." />
+    
+    <!-- REGISTER EVENTS-->
+    <aura:registerEvent name="acEvent" type="c:AutocompleteEvent" />
+    
+    <div class="slds-form-element slds-m-around_xx-small">
+        <label class="slds-form-element__label" for="input-unique-id">{!v.inputLabel}</label>
+        <div class="slds-form-element__control">
+            <div class="slds-combobox__form-element slds-input-has-icon slds-input-has-icon_right">
+                <input id="autocompleteInput" name="autocompleteInput" class="slds-input slds-combobox__input" />
+                <span class="slds-icon_container slds-icon-utility-search slds-input__icon slds-input__icon_right" title="">
+                    <lightning:icon iconName="utility:search" size="x-small" />
+                </span>
+            </div>
+        </div>
+    </div>
+</aura:component>
