@@ -1,7 +1,7 @@
 <design:component >
-	<design:attribute name="sObjectName" label="Autocomplete SObject Name" description="Object on which autocomplete lookup is to be created."  />
-    <design:attribute name="fieldName" label="Autocomplete Field Name" description="The field on which user will get autocomplete suggestions while typing."  />    
-    <design:attribute name="inputLabel" label="Input Label" description="The label string for the lookup field. By default 'Name' is used."  />
-    <design:attribute name="recordLimit" label="Record Limit" description="The number of records to be fetched. Default 200. Minimum 1. Maximum 2000." />
-    <design:attribute name="showRequired" label="Show As Required" description="Boolean attibute to show required (red asterisk) indicator before label." />
+	<design:attribute name="sObjectName" label="Autocomplete SObject Name" default="Account" description="Object on which autocomplete lookup is to be created."  />
+    <design:attribute name="fieldName" label="Autocomplete Field Name" default="Name" description="The field on which user will get autocomplete suggestions while typing."  />    
+    <design:attribute name="inputLabel" label="Input Label" default="Search" description="The label string for the lookup field. By default 'Name' is used."  />
+    <design:attribute name="recordLimit" label="Record Limit" default="200" description="The number of records to be fetched. Default 200. Minimum 1. Maximum 2000." />
+    <design:attribute name="showRequired" label="Show As Required" default="false" description="Boolean attibute to show required (red asterisk) indicator before label." />
 </design:component>
